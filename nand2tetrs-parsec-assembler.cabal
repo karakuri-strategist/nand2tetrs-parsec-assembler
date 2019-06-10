@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5131dea43115dcaf0679f4e372bbe00a0e5f4c5179088857e962b3b781014ad8
+-- hash: 8247bea4fef80a38f9b0e645719a9e5f762c651cf15e820278b195903c59d5a3
 
 name:           nand2tetrs-parsec-assembler
 version:        0.1.0.0
@@ -40,6 +40,7 @@ library
     , bytestring
     , containers
     , parsec
+    , split
   default-language: Haskell2010
 
 executable nand-assembler
@@ -55,6 +56,7 @@ executable nand-assembler
     , containers
     , nand2tetrs-parsec-assembler
     , parsec
+    , split
   default-language: Haskell2010
 
 test-suite parsec-tutorial-test
@@ -69,6 +71,7 @@ test-suite parsec-tutorial-test
       base >=4.7 && <5
     , bytestring
     , containers
+    , nand2tetrs-parsec-assembler
     , parsec
-    , parsec-tutorial
+    , split
   default-language: Haskell2010
